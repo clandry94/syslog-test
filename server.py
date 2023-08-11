@@ -13,8 +13,8 @@ from syslog_rfc5424_parser import SyslogMessage, ParseError
 
 def main():
     messages = [
-            '<6> 2023-08-11T20:37:32.029385Z felt web-aaaaa 1 {"foo": "bar"}',
-            '<6>1 2023-08-11T20:37:32.029385Z felt web-aaaaa 1 - - {"foo": "bar"}',
+            '<6> 2023-08-11T20:37:32.029385Z felt web-aaaaa 1 {"foo": "bar"}', # bad
+            '<6>1 2023-08-11T20:37:32.029385Z felt web-aaaaa 1 - - {"foo": "bar"}', # good
             ]
     
     for m in messages:
